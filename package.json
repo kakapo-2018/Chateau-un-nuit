@@ -40,6 +40,8 @@
     "pg": "^7.4.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-popup": "^0.9.3",
+    "react-router-dom": "^4.3.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },
