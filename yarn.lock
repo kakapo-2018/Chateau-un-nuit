@@ -3540,6 +3540,10 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+keymaster@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/keymaster/-/keymaster-1.6.2.tgz#e1ae54d0ea9488f9f60b66b668f02e9a1946c6eb"
+
 killable@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.0.tgz#da8b84bd47de5395878f95d64d02f2449fe05e6b"
@@ -4795,6 +4799,12 @@ react-dom@^16.2.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
+
+react-popup@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/react-popup/-/react-popup-0.9.3.tgz#fbe9a7adf3afc9167123a6f9f4c730ca33da6ccb"
+  dependencies:
+    keymaster "^1.6.2"
 
 react-reconciler@^0.7.0:
   version "0.7.0"
