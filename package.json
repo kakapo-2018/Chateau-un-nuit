@@ -7,7 +7,8 @@
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "start": "webpack && node server",
+    "start": "node server",
+    "webpack": "webpack",
     "dev": "node server & webpack --watch",
     "test": "jest --watchAll"
   },
@@ -28,9 +29,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "knex": "^0.15.2",
-    "sqlite3": "^4.0.2"
-  },
-  "devDependencies": {
+    "sqlite3": "^4.0.2",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -43,5 +42,7 @@
     "react-dom": "^16.2.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
+  },
+  "devDependencies": {
   }
 }
