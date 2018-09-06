@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments('id').primary()
     table.string('room_name')
     table.boolean('available')
-    table.string('description')
+    table.string('description', 5000)
     table.integer('capacity')
     table.string('img')
   })
