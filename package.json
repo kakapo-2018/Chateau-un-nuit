@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "start": "node server",
-    "postinstall": "webpack",
+    "postinstall": "webpack && knex migrate:latest",
     "dev": "node server & webpack --watch",
     "test": "jest --watchAll"
   },
@@ -27,9 +27,6 @@
     ]
   },
   "dependencies": {
-    "express": "^4.16.2",
-    "knex": "^0.15.2",
-    "sqlite3": "^4.0.2",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -37,12 +34,16 @@
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "express": "^4.16.2",
     "jest": "^22.1.4",
+    "knex": "^0.15.2",
+    "pg": "^7.4.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },
   "devDependencies": {
+    "sqlite3": "^4.0.2"
   }
 }
