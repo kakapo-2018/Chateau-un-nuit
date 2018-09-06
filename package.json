@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "start": "node server",
-    "webpack": "webpack",
+    "postinstall": "webpack",
     "dev": "node server & webpack --watch",
     "test": "jest --watchAll"
   },
