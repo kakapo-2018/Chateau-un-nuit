@@ -33,6 +33,14 @@ exports.seed = (knex, Promise)=> {
         description: "Take a portal back in time and luxuriate in the soulful Sixties vibe. The room comes fully equipped with modern-retro furnishings, along with a vintage Pioneer record player and accompanying large speakers, a small but eclectic record collection, vintage guitars and amps, and a host of other memorabilia on the walls. Oh, and the Union Jack-themed king size bed is so comfy you may never want to leave! Groovy baby!",
         capacity: 2,
         img: "http://www.theverbhotel.com/see.html"
+      },
+      {
+        id: 5,
+        room_name: "Nats Play room",
+        available: false,
+        description: "Comes with Cocktail Bar and Waitress",
+        capacity: 3,
+        img: "https://i.pinimg.com/originals/2e/87/01/2e87012ab3a98797f191a67cb54296da.jpg"
       }
 
     ])
