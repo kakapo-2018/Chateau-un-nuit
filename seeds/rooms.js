@@ -20,12 +20,22 @@ exports.seed = (knex, Promise)=> {
       },
       {
         id: 3,
-        room_name: 'Psychedelic Sixties Suite',
+        room_name: "Die Schmetterlinghaus",
         available: true,
-        description: 'Take a portal back in time and luxuriate in the soulful Sixties vibe. The room comes fully equipped with modern-retro furnishings, along with a vintage Pioneer record player and accompanying speakers, a small but eclectic record collection, vintage guitars and amps, and a host of memorabilia on the walls. Oh, and the Union Jack-themed king size bed is so comfy you may never want to leave! Groovy baby!',
+        description: "Some rude guests have suggested that there is such a thing as too many butterflies. If you feel this way then leave IMMEDIATELY! Otherwise if you are amoung the cultured few then please enjoy everything Die Schmetterlinghaus has to offer. Drift off to sleep to the sound of incesent flapping! Wake up to find a thorax in your mouth! Desperately try not to think of thousands of creepy bug eyes watching your every move! You don't need to get hopelessly lost in a rainforest to discover these joys, book today for an experience you probably will not regret. UPDATE: The next 1 guests to book will receive a complimentary head-to-toe coating in necter by hotel staff.",
+        capacity: 3,
+        img: "http://www.schmetterlinghaus.at/fileadmin/_processed_/csm_Atlas_Panorama__Schmetterlinghaus_41693ed3fb.jpg"
+      },
+      {
+        id: 4,
+        room_name: "Psychedelic Sixties Suite",
+        available: true,
+        description: "Take a portal back in time and luxuriate in the soulful Sixties vibe. The room comes fully equipped with modern-retro furnishings, along with a vintage Pioneer record player and accompanying large speakers, a small but eclectic record collection, vintage guitars and amps, and a host of other memorabilia on the walls. Oh, and the Union Jack-themed king size bed is so comfy you may never want to leave! Groovy baby!",
         capacity: 2,
-        img: 'http://www.theverbhotel.com/see.html'
+        img: "http://www.theverbhotel.com/see.html"
       }
+
     ])
   })
 }
+
