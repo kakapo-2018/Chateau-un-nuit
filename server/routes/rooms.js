@@ -5,14 +5,22 @@ router.use(express.json())
 
 
 router.get('/', (req,res)=>{
-    res.send("hi ya")
+    db.getAllRooms()
+    .then(rooms =>
+        res.json(rooms))
 })
+
 router.get('/:id', (req,res)=>{
-    res.send("welcome to the room")
+    let id = req.params.id
+    db.getRoomFromId(id)
+    .then(room =>
+        res.json(room))
+    
 })
 
 router.put('/:id', (req,res)=>{
-    
+    let id = req.params.id
+    db.updateRoomAv(id) 
 })
 
 
