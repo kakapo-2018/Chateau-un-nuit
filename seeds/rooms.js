@@ -4,11 +4,11 @@ exports.seed = (knex, Promise)=> {
     return knex('Rooms').insert([
       {
         id: 1,
-        room_name: 'string',
+        room_name: 'Penthouse',
         available: true,
-        description: 'string',
-        capacity: 2,
-        img: 'string of url'
+        description: 'Enjoy the top room of this Hotel with a spectacular view out to the countryside. We offer 2 showers, 2 baths, free wi-fi for your gadgets like laptops and cell phones and we provide a kitchen. We also have a table tennis bench for those who like to enjoy a bit of competitive nature with room mates. You will feel at home in the penthouse',
+        capacity: 5,
+        img: 'https://images.unsplash.com/15/castle.JPG?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a1b757cd09c0396fc9bb409bb129680c&auto=format&fit=crop&w=1350&q=80'
       },
       {
         id: 2,

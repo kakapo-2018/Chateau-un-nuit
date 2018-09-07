@@ -8,3 +8,4 @@ test('<App />', () => {
   const wrapper = shallow(<App />)
   expect(wrapper.text()).toBe(expected)
 })
+
