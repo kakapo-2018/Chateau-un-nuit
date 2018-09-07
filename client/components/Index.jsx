@@ -1,16 +1,45 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {getAllRooms} from '../api/api'
 
-const ListofRooms = () => {
-  return (
-    <div> 
-    <h1>List Of Rooms</h1>
-    <p>Room 1</p>
-    <p>Room 2</p>
-    <p>Room 3</p>
+class ListofRooms extends React.Component {
+  constructor(props){
+    super(props)
 
+    this.state = {
+      roomList:[]
+    }
+    this.setUpRooms = this.setUpRooms.bind(this)
+  }
+  
+  componentDidMount(){
+    this.setUpRooms()
+  }
 
-    </div>
+  setUpRooms(){
+    getAllRooms()
+    .then(res =>{
+      
+      this.setState({
+        roomList: res
+      })
+    })
+  }
+
+render(){
+  return(
+   <React.Fragment>
+      {this.state.roomList.map(room => {
+        return <li key={room.room_name}><Link to={`/room/${room.id}`} >{room.room_name}</Link></li>
+        
+      })}
+
+      <img src='http://sweethotelmasiadelacy.com/wp-content/uploads/2017/05/11.jpg'/>
+      
+    </React.Fragment>
   )
+}
+
+  
 }
 export default ListofRooms

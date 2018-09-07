@@ -10,15 +10,19 @@ const App = () => {
   return (
     <Router>
         <React.Fragment>
+          <div className='full'>
           <div>
-            <div className="Title">
-            <Route  path= "/" component={Home}/> 
-            </div>
-            <div className="SideBar">
-            <Route  path= "/index" component={ListofRooms}/>     
+            <h1>Chateau-un-nuit</h1>
+          </div>
+          <div className='bodywrap'>
+            <div className='sidebar'>
+            <Route exact path= "/" component={ListofRooms}/>  
             </div> 
+            <Route  path= "/room/:id" component={Home}/>
+          </div> 
+          <div>
             <Footer/>  
-         </div>
+         </div> </div>
         </React.Fragment>
      </Router>
       
@@ -34,6 +38,7 @@ export default App
 //     super(props)
 
 //   }
+
 
 
 // render() {

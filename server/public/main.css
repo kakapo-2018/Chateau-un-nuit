@@ -1,8 +1,33 @@
-.Sidebar{
+html{
+  background-image: url("http://sweethotelmasiadelacy.com/wp-content/uploads/2017/05/11.jpg");
+}
+
+div{
+  display: flex;
+}
+
+
+
+.Title{
+  margin-left: 10%;
+}
+
+.full{
+  display: flex;
+  flex-direction: column;
+}
+
+.bodywrap{
   display: flex;
   flex-direction: row;
 }
 
-.Title{
-  margin-left: 10%;
+.sidebar li{
+  width: 300px;
+  display: flex;
+}
+
+img{
+  width: 300px;
+  height: 300px;
 }

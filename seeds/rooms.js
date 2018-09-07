@@ -32,7 +32,7 @@ exports.seed = (knex, Promise)=> {
         available: true,
         description: "Take a portal back in time and luxuriate in the soulful Sixties vibe. The room comes fully equipped with modern-retro furnishings, along with a vintage Pioneer record player and accompanying large speakers, a small but eclectic record collection, vintage guitars and amps, and a host of other memorabilia on the walls. Oh, and the Union Jack-themed king size bed is so comfy you may never want to leave! Groovy baby!",
         capacity: 2,
-        img: "http://www.theverbhotel.com/see.html"
+        img: "https://www.theverbhotel.com/uploads/9/8/6/9/98696408/img-2690-hdr-result_orig.jpg"
       },
       {
         id: 5,
