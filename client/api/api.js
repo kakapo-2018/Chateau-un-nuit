@@ -24,3 +24,20 @@ export function getAllRooms () {
       })
   }
 
+  /*   register route   export function register () {
+    return request.get('v1/auth/register/${id}')
+    .then(res =>  {
+        console.log(res.body)
+
+        const home = res.body
+        return book  
+    })
+    .catch(()  => {
+      throw Error('You need to implement an API route for /v1/home')  
+    })
+  }*/
+
+
+
+
+
