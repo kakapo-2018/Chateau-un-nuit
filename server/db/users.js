@@ -1,5 +1,8 @@
 const connection = require('./connection');
 
+//Get password details for user from hash file
+const hash = require('../auth/hash');
+
 module.exports = {
   createUser,
   userExists
@@ -7,7 +10,8 @@ module.exports = {
 
 function createUser(username, password, conn) {
   const db = conn || connection;
-  return db('users').insert({ username, hash: password });
+  const passwordHash = hash.generate(password);
+  return db('users').insert({ username, hash: passwordHash });
 }
 
 function userExists(username, conn) {
