@@ -18,8 +18,9 @@ const App = () => {
             <div className='sidebar'>
             <Route exact path= "/" component={ListofRooms}/>  
             </div> 
-            <Route  path= "/room/:id" component={Home}/>
-          </div> 
+            <Route path= "/room/:id" component={Home}/>
+            
+            </div>
           <div>
             <Footer/>  
          </div> </div>
