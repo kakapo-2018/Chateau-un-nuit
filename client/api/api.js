@@ -3,6 +3,7 @@ import request from 'superagent'
 export function getAllRooms () {
     return request.get('/v1/home')
       .then(res => {
+        console.log(res)
         const home = res.body
         return home
       })

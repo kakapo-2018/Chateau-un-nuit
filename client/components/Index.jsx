@@ -19,6 +19,7 @@ class ListofRooms extends React.Component {
   setUpRooms(){
     getAllRooms()
     .then(res =>{
+      console.log('rooms', res)
       
       this.setState({
         roomList: res
